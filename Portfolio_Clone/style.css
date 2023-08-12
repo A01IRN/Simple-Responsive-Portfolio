@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #111;
+    font-family: sans-serif;
+    color: #eee;
+
+}
+.centering{
+    padding: 6rem 12rem;
+    
+}
+.nav__name{
+    font-size: 2rem;
+    align-self: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav__link{
+    align-self: center;
+}
+.nav__list--items{
+    display: inline-block;
+    transform: translate(-50%,0);
+    margin: 0 2rem;
+}
+.nav__link--items:link,.nav__link--items:visited{
+    text-decoration: none;
+    color: #bbb;
+    font-size: 2rem;
+
+}
+
+
+.nav__btn--item{
+    padding: 1.5rem 3rem;
+    background-color: rgb(254, 250, 10);
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+.nav__btn--mobile{
+    background: none;
+    border: none;
+    display: none;
+}
+.nav__mobile--close{
+    text-decoration: none;
+    color: #555 ;
+    font-size: 4rem;
+    display: none;
+    z-index: 1;
+}
+
+
+/* ----------------------Main Section ------------------------ */
+
+.main__header--h1{
+    margin-top: 10rem;
+    font-size: 6rem;
+    width: 60%;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.main__para--p{
+    width: 50%;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: .12rem;
+}
+
+.main__logos{
+    margin-top: 8rem;
+    display: flex;
+    gap: 10.5rem;
+}
+.logo{
+    max-width: 10rem;
+}
+.products{
+    display: flex;
+    gap: 10rem;
+    margin-top: 8rem;
+}
+
+.product__num--1{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.product__num--2{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product__header{
+    font-size: 3rem;
+}
+
+.product__para{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: .1rem;
+}
+
+.info{
+    height: 45rem;
+    background-color: #555;
+    margin-top: 8rem;
+    padding: 6rem 12rem;
+}
+
+.info__header{
+    font-weight: 500;
+    font-size: 2.8rem;
+}
+.info__color--header{
+    color: #fff;
+}
+.info__color{
+    color: #bbb;
+}
+.info__para1{
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+.info__para2{
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+.contact{
+    width: 45%;
+}
+.contact__header{
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+.contact__para{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    line-height: 1.7;
+    color: #999;
+}
+
+.contact__btn{
+
+    padding: 1.5rem 3rem;
+    background-color: rgb(254, 250, 10);
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #555;
+    padding: 2rem 12rem;
+}
+.footer__name{
+    align-self: center;
+}
+.footer__name--header{
+    color: #eee;
+    align-self: center;
+}
+
+.footer__logo{
+    margin-right: 1rem;
+}
+
+/* -----------Media Queries----------- */
+
+@media (max-width: 81.25rem) {
+    html{font-size: 56.5%;}
+    .main__logos{
+        gap: 8rem;
+    }
+    .logo{
+        max-width: 12rem;
+    }
+    .product__num--1,.product__num--2{
+        flex-basis: 40%;
+    }
+    .products{
+        gap: 7rem;
+    }
+    .products__pic{
+        max-width: 50rem;
+    }
+    .info{
+        height: 58rem;
+        gap: 19rem;
+        padding: 6rem 8rem;
+    }
+    .info__para1,.info__para2{
+        font-size: 1.6rem;
+    }
+
+}
+
+@media(max-width: 68.75rem){
+    html{
+        font-size: 50%;
+    }
+    .main__logos{
+        gap: 6rem;
+    }
+    .logo{
+        max-width: 12rem;
+    }
+    .info{
+        height: 65rem;
+        gap: 22rem;
+        padding: 6rem 8rem;
+    }
+    .info__para1,.info__para2{
+        font-size: 1.6rem;
+        flex-basis: 60%;
+    }
+}
+@media(max-width: 60rem){
+    html{
+        font-size: 43.75%;
+    }
+    .info__para1,.info__para2{
+        font-size: 1.8rem;
+        flex-basis: 60%;
+    }
+    .info{
+        height: 65rem;
+        gap: 22rem;
+    }
+    .info{
+        height: 75rem;
+        gap: 22rem;
+        padding: 6rem 8rem;
+    }
+    .centering{
+        padding: 6rem 8rem;
+    }
+
+    .contact{
+        width: 100%;
+        position: relative;
+    }
+    .contact__btn{
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+}
+@media(max-width: 50rem){
+    ol{
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4.8rem;
+        transition: all 0.5s;
+        
+
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav--open .nav__link ol{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+    .nav__link--items{
+        color: #000 !important;
+        font-size: 6rem !important;
+        display: inline-block;
+        transform: translate(40%,0);
+    }
+    .nav__btn--mobile{
+        display: block;
+    }
+    .nav__btn--item{
+        display: none;
+    }
+    .nav--open .nav__mobile--close{
+        display: block;
+        z-index: 1;
+        position: relative;
+    }
+    .nav--open .nav__mobile--open{
+        display: none;
+    }
+    .products{
+        flex-direction: column;
+        gap: 10rem;
+    }
+    .product__num--1{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .product__num--2{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .products__pic{
+        max-width: 100%;
+    }
+    .product__header{
+        font-size: 5.4rem;
+        font-weight: 400;
+    }
+    .product__para{
+        font-size: 2.2rem;
+        letter-spacing: .1rem;
+        font-weight: 300;
+    }
+    .info{
+        height: 100rem;
+        gap: 19rem;
+        padding: 6rem 8rem;
+    }
+    .main__header--h1{
+        margin-top: 10rem;
+        font-size: 6rem;
+        width: 100%;
+        font-weight: 400;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        letter-spacing: 0.3rem;
+    }
+    .main__para--p{
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        letter-spacing: .12rem;
+    }
+    .main__logos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20rem;
+    }
+
+    .info{
+        
+        gap: 12rem;
+        padding: 6rem 8rem;
+    }
+    .info__para1,.info__para2{
+        font-size: 1.6rem;
+        flex-basis: 60%;
+        font-size: 2rem;
+    }
+    .contact{
+        height: 20rem;
+        margin-top: 1rem;
+        width: 100%;
+        position: relative;
+        padding-top: 1rem;
+    }
+    .contact__para{
+        font-size: 2.2rem;
+    }
+
+    .contact__btn{
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+}
+@media (max-width: 39rem) {
+    .main__header--h1{
+        font-size: 4rem;
+    }
+
+    .main__logos{
+        margin-top: 8rem;
+        column-gap: 9.5rem;
+        margin-left: 3rem;
+    }
+    .logo{
+        max-width: 10rem;
+    }
+    .info{
+        height: 110rem;
+        gap: 2rem;
+    }
+    .product__header{
+        font-size: 4rem;
+    }
+    .product__para{
+        font-size: 1.9rem;
+    }
+    .info{
+        height: 140rem;
+        gap: 15rem;
+    }
+    .info__header{
+        font-size: 3rem;
+    }
+    .contact{
+        height: 30rem ;
+    }
+}
+
+@media (max-width: 31.25rem) {
+    html {
+        font-size: 40%;
+    }
+    .centering{
+        padding: 2rem 4rem;
+    }
+    .info{
+        padding: 2rem 4rem;
+        height: 130rem;
+        gap: 5rem;
+    }
+    .logo{
+        max-width: 10rem;
+    }
+    .contact__btn{
+        transform: translate(-50%,-50%);
+        padding: 1rem 2rem;
+        
+    }
+}
+@media (max-width: 24.5rem) {
+    html{
+        font-size: 35%;
+    }
+    .main__para--p{
+        font-size: 2.4rem;
+    }
+    .product__para{
+        font-size: 2.2rem;
+    }
+    .footer{
+        padding: 2rem 4rem;
+    }
+    .info__para1,.info__para2{
+        font-size: 2.1rem;
+    }
+}
